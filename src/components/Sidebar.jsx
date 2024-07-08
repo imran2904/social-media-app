@@ -3,7 +3,7 @@ import React from "react";
 const Sidebar = ({ selectedTab, setselectedTab }) => {
   return (
     <div
-      className=" sidebar d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+      className=" sidebar d-flex flex-column p-3 text-bg-dark"
       style={{ width: "180px" }}
     >
       <a
@@ -38,9 +38,6 @@ const Sidebar = ({ selectedTab, setselectedTab }) => {
               selectedTab == "Create Post" && "active"
             } `}
           >
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlinkHref="#speedometer2"></use>
-            </svg>
             Create Post
           </a>
         </li>
@@ -60,7 +57,7 @@ const Sidebar = ({ selectedTab, setselectedTab }) => {
             height="32"
             className="rounded-circle me-2"
           />
-          <strong>mdo</strong>
+          <strong>imran</strong>
         </a>
         <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
           <li>

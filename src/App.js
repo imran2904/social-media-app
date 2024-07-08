@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
@@ -27,7 +28,8 @@ function App() {
             ) : (
               <Routes>
                 <Route path="/create-post" element={<CreatePost />} />
-                <Route path="*" element={<CreatePost />} /> {/* Handle any other routes */}
+                <Route path="*" element={<CreatePost />} />{" "}
+                {/* Handle any other routes */}
               </Routes>
             )}
             <Footer />
